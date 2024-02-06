@@ -28,7 +28,7 @@ data "google_compute_zones" "available" {
 
 resource "random_shuffle" "available_zones" {
   input        = data.google_compute_zones.available.names
-  result_count = 4
+  result_count = 5
 }
 
 locals {
